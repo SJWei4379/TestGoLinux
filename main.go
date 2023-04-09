@@ -11,6 +11,7 @@ func hello(w http.ResponseWriter, req *http.Request) {
 	fmt.Fprintf(w, "恭喜！项目运行成功！！！\n")
 	fmt.Fprintf(w, "啦啦啦~快点成功啊\n")
 	fmt.Fprintf(w, "《连城诀》--狄云\n")
+	fmt.Fprintf(w, "有仇必报--丁鹏\n")
 	//io.WriteString(w, "Hello, world!\n")
 	fmt.Println("成功通过ip访问！！！")
 }
