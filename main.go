@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"net/http"
 )
 
@@ -14,7 +15,7 @@ func hello(w http.ResponseWriter, req *http.Request) {
 	fmt.Fprintf(w, "有仇必报--丁鹏\n")
 	fmt.Fprintf(w, "你方唱罢我登场\n")
 	fmt.Fprintf(w, "十步杀一人，千里不留行\n")
-	//io.WriteString(w, "Hello, world!\n")
+	io.WriteString(w, "HelloWorld!\n")
 	fmt.Println("成功通过ip访问！！！")
 }
 
